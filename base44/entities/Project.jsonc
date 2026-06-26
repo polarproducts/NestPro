@@ -1,0 +1,109 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Project name"
+    },
+    "names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of names to nest"
+    },
+    "font_family": {
+      "type": "string",
+      "default": "Arial"
+    },
+    "font_color": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "font_bold": {
+      "type": "boolean",
+      "default": false
+    },
+    "font_italic": {
+      "type": "boolean",
+      "default": false
+    },
+    "letter_spacing": {
+      "type": "number",
+      "default": 0
+    },
+    "word_spacing": {
+      "type": "number",
+      "default": 0
+    },
+    "size_mode": {
+      "type": "string",
+      "enum": [
+        "width",
+        "height",
+        "both"
+      ],
+      "default": "height"
+    },
+    "target_width_mm": {
+      "type": "number",
+      "default": 100
+    },
+    "target_height_mm": {
+      "type": "number",
+      "default": 30
+    },
+    "stretch_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "sheet_width_mm": {
+      "type": "number",
+      "default": 1000
+    },
+    "sheet_height_mm": {
+      "type": "number",
+      "default": 560
+    },
+    "gap_mm": {
+      "type": "number",
+      "default": 3
+    },
+    "sheet_margin_mm": {
+      "type": "number",
+      "default": 5
+    },
+    "allow_rotation": {
+      "type": "boolean",
+      "default": false
+    },
+    "remove_duplicates": {
+      "type": "boolean",
+      "default": true
+    },
+    "auto_sort_by_size": {
+      "type": "boolean",
+      "default": true
+    },
+    "mirror_text": {
+      "type": "boolean",
+      "default": false
+    },
+    "outline_text": {
+      "type": "boolean",
+      "default": false
+    },
+    "outline_thickness": {
+      "type": "number",
+      "default": 1
+    },
+    "quantities": {
+      "type": "object",
+      "description": "Map of name to quantity"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
